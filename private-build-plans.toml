@@ -1,0 +1,18 @@
+[buildPlans.iosevka-mayukai]                         # <iosevka-custom> is your plan name
+family = "Iosevka Mayukai"                           # Font menu family name
+design = ["ss09", "v-i-hooky", "v-l-italic", "v-u-without-bar", "v-g-doublestorey", "v-zero-slashed", "v-dollar-open", "v-three-flattop"] # Customize styles
+upright = []
+italic = ["v-i-italic", "v-g-singlestorey"]
+oblique = []
+hintParams = ["-a", "sss"]                          # Optional custom parameters for ttfautohint
+
+
+# Override default building weights
+# When buildPlans.<plan name>.weights is absent
+# All weights would built and mapped to default shape/CSS
+# IMPORTANT : Currently "menu" property only support 100, 200, 300, 400, 450, 500, 600, 700, 800, 900.
+#              and "shape" properly only supports number between 100 and 900 (inclusive).
+
+# Override default building slant sets
+# Format: <upright|italic|oblique> = <"normal"|"italic"|"oblique">
+# When this section is absent, all slants would be built.
