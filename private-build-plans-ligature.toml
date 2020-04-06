@@ -1,8 +1,8 @@
 [buildPlans.iosevka-mayukai]                         # <iosevka-custom> is your plan name
 family = "Iosevka Mayukai"                           # Font menu family name
-design = ["ss09", "v-i-hooky", "v-l-italic", "v-u-without-bar", "v-g-doublestorey", "v-zero-slashed", "v-dollar-open", "v-three-flattop"] # Customize styles
+design = ["ss09", "v-i-hooky", "v-l-italic", "v-u-without-bar", "v-g-doublestorey", "v-zero-reverse-slashed", "v-dollar-open", "v-three-flattop", "v-r-straight"] # Customize styles
 upright = []
-italic = ["v-i-italic", "v-g-singlestorey"]
+italic = ["v-i-tailed", "v-g-singlestorey"]
 oblique = []
 hintParams = ["-a", "sss"]                          # Optional custom parameters for ttfautohint
 
