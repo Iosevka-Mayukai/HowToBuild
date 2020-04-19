@@ -1,0 +1,5 @@
+env PATH="$PATH:~/home/kucingmumu/apps/Iosevkabuilds/otfcc/bin/release-x64" npm run build -- contents::iosevka-custom
+
+env PATH="$PATH:/home/kucingmumu/apps/Iosevkabuilds/otfcc/bin/release-x64" yarn run build -- contents::iosevka-custom
+
+env PATH="$PATH:/home/kucingmumu/apps/Iosevkabuilds/otfcc/bin/release-x64" yarn run build -- contents::iosevka-mayukai
