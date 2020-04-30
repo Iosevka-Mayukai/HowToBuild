@@ -1,6 +1,6 @@
-[buildPlans.iosevka-mayukai-term]                         # <iosevka-custom> is your plan name
-family = "Iosevka Mayukai Term"                           # Font menu family name
-design = ["ss09", "v-i-zshaped", "v-l-zshaped", "v-u-without-bar", "v-g-singlestorey", "v-zero-reverse-slashed", "v-dollar-open", "v-three-flattop", "v-r-straight", "sp-term", "no-ligation", "v-nine-turned-six", "v-capital-g-toothless"] # Customize styles
+[buildPlans.iosevka-mayukai-bionic]                         # <iosevka-custom> is your plan name
+family = "Iosevka Mayukai Bionics"                           # Font menu family name
+design = ["ss09", "v-i-zshaped", "v-l-zshaped", "v-u-without-bar", "v-g-singlestorey", "v-zero-reverse-slashed", "v-dollar-open", "v-three-flattop", "v-r-straight", "v-nine-turned-six", "v-capital-g-toothless"] # Customize styles
 upright = []
 italic = ["v-i-zshaped", "v-g-singlestorey"]
 oblique = []
