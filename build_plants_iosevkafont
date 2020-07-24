@@ -3,3 +3,8 @@ env PATH="$PATH:~/home/kucingmumu/apps/Iosevkabuilds/otfcc/bin/release-x64" npm 
 env PATH="$PATH:/home/kucingmumu/apps/Iosevkabuilds/otfcc/bin/release-x64" yarn run build -- contents::iosevka-custom
 
 env PATH="$PATH:/home/kucingmumu/apps/Iosevkabuilds/otfcc/bin/release-x64" yarn run build -- contents::iosevka-mayukai
+
+env PATH="$PATH:/home/kucingmumu/apps/Iosevkabuilds/otfccbuild" yarn run build -- contents::iosevka-mayukai
+
+env PATH="$PATH:/home/kucingmeongs/apps/Iosevkabuilds/otfccbuild" yarn run build -- contents::iosevka-mayukai
+
