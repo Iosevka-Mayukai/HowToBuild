@@ -23,6 +23,10 @@ design = [
   "v-p-earless-corner",
   "v-q-earless-corner",
   "v-y-straight-turn",
+  "v-a-doublestorey-toothless-corner",
+  "v-m-earless-rounded-double-arch",
+  "v-n-earless-corner-straight",
+  "v-r-earless-corner",
 ] # Customize styles
 family = "Iosevka Mayukai Term" # Font menu family name
 hintParams = ["-a", "sss"] # Optional custom parameters for ttfautohint
@@ -36,6 +40,9 @@ italic = [
   "v-p-earless-corner",
   "v-q-earless-corner",
   "v-y-straight-turn",
+  "v-m-earless-rounded-double-arch",
+  "v-n-earless-corner-straight",
+  "v-r-earless-corner",
 ]
 oblique = []
 upright = []
