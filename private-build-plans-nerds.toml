@@ -1,0 +1,57 @@
+[buildPlans.iosevka-mayukai-nerds] # <iosevka-custom> is your plan name
+design = [
+  "ss09",
+  "v-i-zshaped",
+  "v-l-zshaped",
+  "v-u-without-bar",
+  "v-g-singlestorey",
+  "v-zero-reverse-slashed",
+  "v-dollar-open",
+  "v-three-flattop",
+  "v-r-straight",
+  "v-six-straight-bar",
+  "v-nine-straight-bar",
+  "v-capital-g-toothless",
+  "v-one-base",
+  "v-four-closed-non-crossing",
+  "v-capital-b-more-asymmetric",
+  "v-b-toothless-corner",
+  "v-d-toothless-corner",
+  "v-g-earless-corner",
+  "v-p-earless-corner",
+  "v-q-earless-corner",
+  "ligset-dlig",
+  "v-y-straight-turn",
+  "v-a-doublestorey-toothless-corner",
+  "v-m-earless-rounded-double-arch",
+  "v-n-earless-corner-straight",
+  "v-r-earless-corner",
+] # Customize styles
+family = "Iosevka Mayukai Nerd" # Font menu family name
+hintParams = ["-a", "sss"] # Optional custom parameters for ttfautohint
+italic = [
+  "v-i-zshaped",
+  "v-g-singlestorey",
+  "v-one-base",
+  "v-b-toothless-corner",
+  "v-d-toothless-corner",
+  "v-g-earless-corner",
+  "v-p-earless-corner",
+  "v-q-earless-corner",
+  "v-y-straight-turn",
+  "v-m-earless-rounded-double-arch",
+  "v-n-earless-corner-straight",
+  "v-r-earless-corner",
+]
+oblique = []
+upright = []
+
+# Override default building weights
+# When buildPlans.<plan name>.weights is absent
+# All weights would built and mapped to default shape/CSS
+# IMPORTANT : Currently "menu" property only support 100, 200, 300, 400, 450, 500, 600, 700, 800, 900.
+#              and "shape" properly only supports number between 100 and 900 (inclusive).
+
+# Override default building slant sets
+# Format: <upright|italic|oblique> = <"normal"|"italic"|"oblique">
+# When this section is absent, all slants would be built.
