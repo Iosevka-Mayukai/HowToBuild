@@ -8,3 +8,4 @@ env PATH="$PATH:/home/kucingmumu/apps/Iosevkabuilds/otfccbuild" yarn run build -
 
 env PATH="$PATH:/home/kucingmeongs/apps/Iosevkabuilds/otfccbuild" yarn run build -- contents::iosevka-mayukai
 
+npm run build -- contents::iosevka-mayukai
