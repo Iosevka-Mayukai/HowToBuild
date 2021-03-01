@@ -15,7 +15,7 @@ inherits = "ss09"
 [buildPlans.iosevka-mayukai.variants.design]
 dollar = 'open'
 cent = 'open'
-zero = 'long-dotted'
+zero = 'reverse-slashed'
 one = 'base'
 two = 'curly-neck'
 three = 'flattop'
@@ -35,11 +35,11 @@ d = 'toothless-corner'
 e = 'flat-crossbar'
 f = 'flat-hook'
 g = 'earless-corner'
-i = 'serifed-flat-tailed'
+i = 'zshaped'
 j = 'serifed'
 k = 'straight'
-l = 'serifed-flat-tailed'
-m = 'earless-corner-double-arch-short-leg'
+l = 'zshaped'
+m = 'earless-rounded-double-arch'
 n = 'earless-corner-straight'
 p = 'earless-corner'
 q = 'earless-corner'
@@ -66,7 +66,7 @@ i = 'serifed-tailed'
 j = 'serifed'
 k = 'cursive'
 l = 'serifed-tailed'
-m = 'earless-rounded-double-arch-short-leg'
+m = 'earless-rounded-double-arch'
 n = 'earless-rounded-straight'
 p = 'earless-rounded'
 q = 'earless-rounded'
@@ -121,9 +121,9 @@ enables  = []               # Optional; enable specific ligation groups, overrid
 # Format: <upright|italic|oblique> = <"normal"|"italic"|"oblique">
 # When this section is absent, all slopes would be built.
 
-# [buildPlans.iosevka-custom.slopes]
-# upright = "normal"
-# italic = "italic"
+[buildPlans.iosevka-mayukai.slopes]
+upright = "normal"
+italic = "italic"
 # oblique = "oblique"
 
 # End slope section

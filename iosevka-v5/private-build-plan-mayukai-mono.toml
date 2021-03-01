@@ -39,7 +39,7 @@ i = 'serifed-flat-tailed'
 j = 'serifed'
 k = 'straight'
 l = 'serifed-flat-tailed'
-m = 'earless-corner-double-arch-short-leg'
+m = 'earless-rounded-double-arch-short-leg'
 n = 'earless-corner-straight'
 p = 'earless-corner'
 q = 'earless-corner'
@@ -121,9 +121,9 @@ enables  = []               # Optional; enable specific ligation groups, overrid
 # Format: <upright|italic|oblique> = <"normal"|"italic"|"oblique">
 # When this section is absent, all slopes would be built.
 
-# [buildPlans.iosevka-custom.slopes]
-# upright = "normal"
-# italic = "italic"
+[buildPlans.iosevka-mayukai.slopes]
+upright = "normal"
+italic = "italic"
 # oblique = "oblique"
 
 # End slope section
