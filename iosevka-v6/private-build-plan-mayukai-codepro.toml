@@ -1,5 +1,5 @@
-[buildPlans.iosevka-mayukai]      # <iosevka-custom> is your plan name
-family = "Iosevka Mayukai"        # Font menu family name
+[buildPlans.iosevka-mayukai-codepro]      # <iosevka-custom> is your plan name
+family = "Iosevka Mayukai Codepro"        # Font menu family name
 spacing = "normal"               # Optional; Values: `normal`, `term`, `fontconfig-mono`, or `fixed`
 serifs = "sans"                  # Optional; Values: `sans` or `slab`
 
@@ -8,11 +8,11 @@ serifs = "sans"                  # Optional; Values: `sans` or `slab`
 # Iosevka Mayukai Config with base from Iosevka v4.x
 
 # Optional; Whether to inherit a `ss##` variant
-[buildPlans.iosevka-mayukai.variants]
+[buildPlans.iosevka-mayukai-codepro.variants]
 inherits = "ss09"
 
 # Optional; Configure single character's variant
-[buildPlans.iosevka-mayukai.variants.design]
+[buildPlans.iosevka-mayukai-codepro.variants.design]
 capital-a = 'straight-serifless'
 capital-b = 'more-asymmetric-serifless'
 capital-c = 'serifless'
@@ -64,7 +64,7 @@ percent = 'rings-continuous-slash'
 underscore = 'high'
 
 # Optional; Configure single character's variant for Italic only; Overrides [design]
-[buildPlans.iosevka-mayukai.variants.italic]
+[buildPlans.iosevka-mayukai-codepro.variants.italic]
 a = 'single-storey-earless-corner-tailed'
 b = 'toothless-rounded'
 d = 'toothless-rounded-serifless'
@@ -90,7 +90,7 @@ y = 'cursive'
 ###################################################################################################
 # Configure ligations
 
-[buildPlans.iosevka-mayukai.ligations]
+[buildPlans.iosevka-mayukai-codepro.ligations]
 inherits = "dlig"   # Optional; inherits an existing ligation set
 disables = []               # Optional; disable specific ligation groups, overrides inherited ligation set
 enables  = []               # Optional; enable specific ligation groups, overrides inherited ligation set
@@ -130,7 +130,7 @@ enables  = []               # Optional; enable specific ligation groups, overrid
 # Format: <upright|italic|oblique> = <"normal"|"italic"|"oblique">
 # When this section is absent, all slopes would be built.
 
-[buildPlans.iosevka-mayukai.slopes]
+[buildPlans.iosevka-mayukai-codepro.slopes]
 upright = "normal"
 italic = "italic"
 # oblique = "oblique"
