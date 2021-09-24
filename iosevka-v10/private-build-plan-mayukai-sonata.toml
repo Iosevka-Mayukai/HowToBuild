@@ -61,6 +61,7 @@ paren = 'large-contour'
 percent = 'rings-continuous-slash'
 underscore = 'high'
 punctuation-dot = 'round'
+question = 'smooth'
 
 # Optional; Configure single character's variant for Italic only; Overrides [design]
 [buildPlans.iosevka-mayukai-sonata.variants.italic]
@@ -90,9 +91,27 @@ y = 'cursive'
 # Configure ligations
 
 [buildPlans.iosevka-mayukai-sonata.ligations]
-inherits = "dlig"   # Optional; inherits an existing ligation set
+inherits = "default-calt"   # Optional; inherits an existing ligation set
 disables = []               # Optional; disable specific ligation groups, overrides inherited ligation set
-enables  = []               # Optional; enable specific ligation groups, overrides inherited ligation set
+enables  = [
+    "center-ops",
+    "arrow",
+    "arrow2",
+    "trig",
+    "eqeqeq",
+    "eqeq",
+    "ineq",
+    "exeqeq",
+    "exeq",
+    "brst",
+    "plusplus",
+    "kern-dotty",
+    "kern-bars",
+    "logic",
+    "llgg",
+    "llggeq",
+    "html-comment"
+]               # Optional; enable specific ligation groups, overrides inherited ligation set
 
 # End ligation section
 ###################################################################################################

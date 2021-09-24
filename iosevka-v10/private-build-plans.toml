@@ -1,75 +1,75 @@
-[buildPlans.iosevka-mayukai-monolite]      # <iosevka-custom> is your plan name
-family = "Iosevka Mayukai Monolite"        # Font menu family name
+[buildPlans.iosevka-mayukai-codepro]      # <iosevka-custom> is your plan name
+family = "Iosevka Mayukai Codepro"        # Font menu family name
 spacing = "normal"               # Optional; Values: `normal`, `term`, `fontconfig-mono`, or `fixed`
 serifs = "sans"                  # Optional; Values: `sans` or `slab`
 
 ###################################################################################################
 # Configure variants
-# Iosevka Mayukai Config with base from Iosevka v4.x
-
 # Optional; Whether to inherit a `ss##` variant
-[buildPlans.iosevka-mayukai-monolite.variants]
+[buildPlans.iosevka-mayukai-codepro.variants]
 inherits = "ss09"
 
 # Optional; Configure single character's variant
-[buildPlans.iosevka-mayukai-monolite.variants.design]
+[buildPlans.iosevka-mayukai-codepro.variants.design]
 capital-a = 'straight-serifless'
 capital-b = 'more-asymmetric-serifless'
 capital-c = 'serifless'
 capital-d = 'more-rounded-serifless'
 capital-g = 'toothless-corner-serifless-hooked'
 capital-u = 'toothless-rounded'
-a = 'double-storey-tailed'
+a = 'double-storey-toothless-corner'
 b = 'toothless-corner'
-d = 'tailed-serifless'
+c = 'serifless'
+d = 'toothless-corner-serifless'
 e = 'flat-crossbar'
 f = 'serifed'
 g = 'double-storey-open'
-h = 'straight-motion-serifed'
+h = 'straight'
 i = 'serifed'
 j = 'serifed'
 k = 'symmetric-connected-serifless'
 l = 'serifed'
 m = 'earless-rounded-double-arch'
-n = 'tailed'
+n = 'straight'
 p = 'earless-corner'
 q = 'earless-corner'
-r = 'corner-hooked-base-serifed'
-t = 'flat-hook'
-u = 'tailed'
-v = 'curly'
-w = 'curly'
+r = 'base-serifed'
+s = 'serifless'
+t = 'standard'
+u = 'toothless-rounded'
+v = 'straight'
+w = 'straight'
 x = 'straight-serifless'
-y = 'cursive'
+y = 'straight-turn'
+z = 'straight-serifless'
 zero = 'reverse-slashed'
 one = 'base-long-top-serif'
 two = 'curly-neck'
 three = 'flat-top'
 four = 'semi-open-non-crossing'
 five = 'vertical-upper-left-bar'
-six = 'open-contour'
+six = 'straight-bar'
 seven = 'bend-serifless'
 eight = 'two-circles'
-nine = 'open-contour'
+nine = 'straight-bar'
 asterisk = 'penta-low'
 brace = 'curly-flat-boundary'
 cent = 'open'
 dollar = 'open'
 number-sign = 'upright'
-paren = 'large-contour'
+paren = 'flat-arc'
 percent = 'rings-continuous-slash'
 underscore = 'high'
 punctuation-dot = 'round'
 
 # Optional; Configure single character's variant for Italic only; Overrides [design]
-[buildPlans.iosevka-mayukai-monolite.variants.italic]
+[buildPlans.iosevka-mayukai-codepro.variants.italic]
 a = 'single-storey-earless-corner-tailed'
 b = 'toothless-rounded'
 d = 'toothless-rounded-serifless'
 e = 'rounded'
 f = 'flat-hook-tailed'
 g = 'earless-rounded'
-h = 'tailed'
 i = 'tailed-serifed'
 j = 'serifed'
 k = 'cursive-serifless'
@@ -81,9 +81,6 @@ q = 'earless-rounded'
 r = 'earless-rounded'
 t = 'standard'
 u = 'toothless-rounded'
-v = 'straight'
-w = 'straight'
-x = 'straight-serifless'
 y = 'cursive'
 
 # End variant section
@@ -92,10 +89,28 @@ y = 'cursive'
 ###################################################################################################
 # Configure ligations
 
-[buildPlans.iosevka-mayukai-monolite.ligations]
-inherits = "dlig"   # Optional; inherits an existing ligation set
+[buildPlans.iosevka-mayukai-codepro.ligations]
+inherits = "default-calt"   # Optional; inherits an existing ligation set
 disables = []               # Optional; disable specific ligation groups, overrides inherited ligation set
-enables  = []               # Optional; enable specific ligation groups, overrides inherited ligation set
+enables  = [
+    "center-ops",
+    "arrow",
+    "arrow2",
+    "trig",
+    "eqeqeq",
+    "eqeq",
+    "ineq",
+    "exeqeq",
+    "exeq",
+    "brst",
+    "plusplus",
+    "kern-dotty",
+    "kern-bars",
+    "logic",
+    "llgg",
+    "llggeq",
+    "html-comment"
+]               # Optional; enable specific ligation groups, overrides inherited ligation set
 
 # End ligation section
 ###################################################################################################
@@ -132,7 +147,7 @@ enables  = []               # Optional; enable specific ligation groups, overrid
 # Format: <upright|italic|oblique> = <"normal"|"italic"|"oblique">
 # When this section is absent, all slopes would be built.
 
-[buildPlans.iosevka-mayukai-monolite.slopes.upright]
+[buildPlans.iosevka-mayukai-codepro.slopes.upright]
 angle = 0             # Angle in degrees. Valid range [0, 15]
 shape = "upright"     # Slope grade used for shape selection.  `upright` | `oblique` | `italic`
 menu  = "upright"     # Slope grade used for naming.           `upright` | `oblique` | `italic`
@@ -144,12 +159,11 @@ css   = "normal"      # Slope grade used for webfont CSS.      `normal`  | `obli
 # menu  = "oblique"
 # css   = "oblique"
 
-[buildPlans.iosevka-mayukai-monolite.slopes.italic]
+[buildPlans.iosevka-mayukai-codepro.slopes.italic]
 angle = 9.4
 shape = "italic"
 menu  = "italic"
 css   = "italic"
-
 # End slope section
 ###################################################################################################
 

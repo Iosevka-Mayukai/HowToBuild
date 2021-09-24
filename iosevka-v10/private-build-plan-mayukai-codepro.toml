@@ -90,9 +90,27 @@ y = 'cursive'
 # Configure ligations
 
 [buildPlans.iosevka-mayukai-codepro.ligations]
-inherits = "dlig"   # Optional; inherits an existing ligation set
+inherits = "default-calt"   # Optional; inherits an existing ligation set
 disables = []               # Optional; disable specific ligation groups, overrides inherited ligation set
-enables  = []               # Optional; enable specific ligation groups, overrides inherited ligation set
+enables  = [
+    "center-ops",
+    "arrow",
+    "arrow2",
+    "trig",
+    "eqeqeq",
+    "eqeq",
+    "ineq",
+    "exeqeq",
+    "exeq",
+    "brst",
+    "plusplus",
+    "kern-dotty",
+    "kern-bars",
+    "logic",
+    "llgg",
+    "llggeq",
+    "html-comment"
+]               # Optional; enable specific ligation groups, overrides inherited ligation set
 
 # End ligation section
 ###################################################################################################
