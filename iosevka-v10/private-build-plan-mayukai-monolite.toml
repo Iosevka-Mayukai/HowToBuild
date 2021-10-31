@@ -55,11 +55,12 @@ asterisk = 'penta-low'
 brace = 'curly-flat-boundary'
 cent = 'open'
 dollar = 'open'
-number-sign = 'upright'
+number-sign = 'upright-tall'
 paren = 'large-contour'
 percent = 'rings-continuous-slash'
 underscore = 'high'
 punctuation-dot = 'round'
+at = 'threefold-tall'
 
 # Optional; Configure single character's variant for Italic only; Overrides [design]
 [buildPlans.iosevka-mayukai-monolite.variants.italic]
@@ -92,7 +93,7 @@ y = 'cursive'
 ###################################################################################################
 # Configure ligations
 
-[buildPlans.iosevka-mayukai-sonata.ligations]
+[buildPlans.iosevka-mayukai-monolite.ligations]
 inherits = "default-calt"   # Optional; inherits an existing ligation set
 disables = []               # Optional; disable specific ligation groups, overrides inherited ligation set
 enables  = [
