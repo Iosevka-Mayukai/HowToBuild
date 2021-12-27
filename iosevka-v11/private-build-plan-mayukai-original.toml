@@ -2,6 +2,7 @@
 family = "Iosevka Mayukai Original" # Font menu family name
 serifs = "sans" # Optional; Values: `sans` or `slab`
 spacing = "normal" # Optional; Values: `normal`, `term`, `fontconfig-mono`, or `fixed`
+webfont-formats = ['woff2']
 
 ###################################################################################################
 # Configure variants

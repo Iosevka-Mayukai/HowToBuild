@@ -2,6 +2,7 @@
 family = "Iosevka Mayukai Codepro"        # Font menu family name
 spacing = "normal"               # Optional; Values: `normal`, `term`, `fontconfig-mono`, or `fixed`
 serifs = "sans"                  # Optional; Values: `sans` or `slab`
+webfont-formats = ['woff2']
 
 ###################################################################################################
 # Configure variants
