@@ -1,32 +1,34 @@
-[buildPlans.iosevka-mayukai-sonata]      # <iosevka-custom> is your plan name
-family = "Iosevka Mayukai Sonata"        # Font menu family name
+[buildPlans.iosevka-mayukai-monolite]      # <iosevka-custom> is your plan name
+family = "Iosevka Mayukai Monolite"        # Font menu family name
 spacing = "fixed"               # Optional; Values: `normal`, `term`, `fontconfig-mono`, or `fixed`
 serifs = "sans"                  # Optional; Values: `sans` or `slab`
 webfont-formats = ['woff2']
 
 ###################################################################################################
 # Configure variants
+# Iosevka Mayukai Config with base from Iosevka v4.x
+
 # Optional; Whether to inherit a `ss##` variant
-[buildPlans.iosevka-mayukai-sonata.variants]
-inherits = "ss03"
+[buildPlans.iosevka-mayukai-monolite.variants]
+inherits = "ss17"
 
 # Optional; Configure single character's variant
-[buildPlans.iosevka-mayukai-sonata.variants.design]
-zero = 'reverse-slashed-oval'
+[buildPlans.iosevka-mayukai-monolite.variants.design]
+zero = 'reverse-slashed'
 one = 'base-long-top-serif'
+eight = 'two-circles'
 asterisk = 'penta-low'
 brace = 'curly-flat-boundary'
 number-sign = 'upright-tall'
+at = 'threefold-tall'
 paren = 'large-contour'
-percent = 'rings-continuous-slash'
+percent = 'rings-segmented-slash'
 underscore = 'high'
 punctuation-dot = 'round'
-question = 'smooth'
-at = 'threefold-tall'
 digit-form = 'lining'
 
 # Optional; Configure single character's variant for Italic only; Overrides [design]
-[buildPlans.iosevka-mayukai-sonata.variants.italic]
+[buildPlans.iosevka-mayukai-monolite.variants.italic]
 
 # End variant section
 ###################################################################################################
@@ -34,7 +36,7 @@ digit-form = 'lining'
 ###################################################################################################
 # Configure ligations
 
-[buildPlans.iosevka-mayukai-sonata.ligations]
+[buildPlans.iosevka-mayukai-monolite.ligations]
 inherits = "default-calt"   # Optional; inherits an existing ligation set
 disables = []               # Optional; disable specific ligation groups, overrides inherited ligation set
 enables  = []               # Optional; enable specific ligation groups, overrides inherited ligation set
@@ -71,9 +73,10 @@ enables  = []               # Optional; enable specific ligation groups, overrid
 
 ###################################################################################################
 # Override default building slope sets
+# Format: <upright|italic|oblique> = <"normal"|"italic"|"oblique">
 # When this section is absent, all slopes would be built.
 
-[buildPlans.iosevka-mayukai-sonata.slopes.upright]
+[buildPlans.iosevka-mayukai-monolite.slopes.upright]
 angle = 0             # Angle in degrees. Valid range [0, 15]
 shape = "upright"     # Slope grade used for shape selection.  `upright` | `oblique` | `italic`
 menu  = "upright"     # Slope grade used for naming.           `upright` | `oblique` | `italic`
@@ -85,11 +88,12 @@ css   = "normal"      # Slope grade used for webfont CSS.      `normal`  | `obli
 # menu  = "oblique"
 # css   = "oblique"
 
-[buildPlans.iosevka-mayukai-sonata.slopes.italic]
+[buildPlans.iosevka-mayukai-monolite.slopes.italic]
 angle = 9.4
 shape = "italic"
 menu  = "italic"
 css   = "italic"
+
 # End slope section
 ###################################################################################################
 

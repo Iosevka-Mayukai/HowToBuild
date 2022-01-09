@@ -1,32 +1,87 @@
-[buildPlans.iosevka-mayukai-sonata]      # <iosevka-custom> is your plan name
-family = "Iosevka Mayukai Sonata"        # Font menu family name
-spacing = "fixed"               # Optional; Values: `normal`, `term`, `fontconfig-mono`, or `fixed`
-serifs = "sans"                  # Optional; Values: `sans` or `slab`
+[buildPlans.iosevka-mayukai-original] # <iosevka-custom> is your plan name
+family = "Iosevka Mayukai Original" # Font menu family name
+serifs = "sans" # Optional; Values: `sans` or `slab`
+spacing = "fixed" # Optional; Values: `normal`, `term`, `fontconfig-mono`, or `fixed`
 webfont-formats = ['woff2']
 
 ###################################################################################################
 # Configure variants
+# Iosevka Mayukai Config with base from Iosevka v4.x
+
 # Optional; Whether to inherit a `ss##` variant
-[buildPlans.iosevka-mayukai-sonata.variants]
-inherits = "ss03"
+[buildPlans.iosevka-mayukai-original.variants]
+inherits = "ss09"
 
 # Optional; Configure single character's variant
-[buildPlans.iosevka-mayukai-sonata.variants.design]
-zero = 'reverse-slashed-oval'
+[buildPlans.iosevka-mayukai-original.variants.design]
+capital-a = 'straight-serifless'
+capital-b = 'more-asymmetric-serifless'
+capital-c = 'serifless'
+capital-d = 'more-rounded-serifless'
+capital-g = 'toothless-corner-serifless-hooked'
+capital-k = 'symmetric-connected-serifless'
+capital-u = 'toothless-rounded'
+a = 'single-storey-earless-corner-tailed'
+b = 'toothless-corner'
+c = 'serifless'
+d = 'toothless-corner-serifless'
+e = 'flat-crossbar'
+f = 'flat-hook'
+g = 'earless-corner'
+i = 'zshaped'
+j = 'serifed'
+k = 'straight-serifless'
+l = 'zshaped'
+m = 'earless-rounded-double-arch'
+n = 'earless-corner-straight'
+p = 'earless-corner'
+q = 'earless-corner'
+r = 'earless-corner'
+t = 'standard'
+u = 'toothless-rounded'
+y = 'straight-turn'
+zero = 'reverse-slashed'
 one = 'base-long-top-serif'
+two = 'curly-neck'
+three = 'flat-top'
+four = 'semi-open-non-crossing'
+five = 'vertical-upper-left-bar'
+six = 'open-contour'
+seven = 'bend-serifless'
+eight = 'two-circles'
+nine = 'open-contour'
 asterisk = 'penta-low'
 brace = 'curly-flat-boundary'
+cent = 'open'
+dollar = 'open'
 number-sign = 'upright-tall'
 paren = 'large-contour'
 percent = 'rings-continuous-slash'
 underscore = 'high'
 punctuation-dot = 'round'
-question = 'smooth'
 at = 'threefold-tall'
 digit-form = 'lining'
 
 # Optional; Configure single character's variant for Italic only; Overrides [design]
-[buildPlans.iosevka-mayukai-sonata.variants.italic]
+[buildPlans.iosevka-mayukai-original.variants.italic]
+a = 'single-storey-earless-corner-tailed'
+b = 'toothless-rounded'
+d = 'toothless-rounded-serifless'
+e = 'rounded'
+f = 'flat-hook-tailed'
+g = 'earless-rounded'
+i = 'tailed-serifed'
+j = 'serifed'
+k = 'cursive-serifless'
+l = 'tailed-serifed'
+m = 'earless-rounded-double-arch'
+n = 'earless-rounded-straight'
+p = 'earless-rounded'
+q = 'earless-rounded'
+r = 'earless-rounded'
+t = 'standard'
+u = 'toothless-rounded'
+y = 'cursive'
 
 # End variant section
 ###################################################################################################
@@ -34,14 +89,13 @@ digit-form = 'lining'
 ###################################################################################################
 # Configure ligations
 
-[buildPlans.iosevka-mayukai-sonata.ligations]
+[buildPlans.iosevka-mayukai-original.ligations]
 inherits = "default-calt"   # Optional; inherits an existing ligation set
 disables = []               # Optional; disable specific ligation groups, overrides inherited ligation set
 enables  = []               # Optional; enable specific ligation groups, overrides inherited ligation set
 
 # End ligation section
 ###################################################################################################
-
 
 ###################################################################################################
 # Override default building weights
@@ -73,7 +127,7 @@ enables  = []               # Optional; enable specific ligation groups, overrid
 # Override default building slope sets
 # When this section is absent, all slopes would be built.
 
-[buildPlans.iosevka-mayukai-sonata.slopes.upright]
+[buildPlans.iosevka-mayukai-original.slopes.upright]
 angle = 0             # Angle in degrees. Valid range [0, 15]
 shape = "upright"     # Slope grade used for shape selection.  `upright` | `oblique` | `italic`
 menu  = "upright"     # Slope grade used for naming.           `upright` | `oblique` | `italic`
@@ -85,11 +139,12 @@ css   = "normal"      # Slope grade used for webfont CSS.      `normal`  | `obli
 # menu  = "oblique"
 # css   = "oblique"
 
-[buildPlans.iosevka-mayukai-sonata.slopes.italic]
+[buildPlans.iosevka-mayukai-original.slopes.italic]
 angle = 9.4
 shape = "italic"
 menu  = "italic"
 css   = "italic"
+
 # End slope section
 ###################################################################################################
 

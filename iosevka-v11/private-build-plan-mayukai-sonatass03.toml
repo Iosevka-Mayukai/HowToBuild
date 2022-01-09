@@ -1,6 +1,6 @@
 [buildPlans.iosevka-mayukai-sonata]      # <iosevka-custom> is your plan name
 family = "Iosevka Mayukai Sonata"        # Font menu family name
-spacing = "fixed"               # Optional; Values: `normal`, `term`, `fontconfig-mono`, or `fixed`
+spacing = "normal"               # Optional; Values: `normal`, `term`, `fontconfig-mono`, or `fixed`
 serifs = "sans"                  # Optional; Values: `sans` or `slab`
 webfont-formats = ['woff2']
 
@@ -37,7 +37,25 @@ digit-form = 'lining'
 [buildPlans.iosevka-mayukai-sonata.ligations]
 inherits = "default-calt"   # Optional; inherits an existing ligation set
 disables = []               # Optional; disable specific ligation groups, overrides inherited ligation set
-enables  = []               # Optional; enable specific ligation groups, overrides inherited ligation set
+enables  = [
+    "center-ops",
+    "arrow",
+    "arrow2",
+    "trig",
+    "eqeqeq",
+    "eqeq",
+    "ineq",
+    "exeqeq",
+    "exeq",
+    "brst",
+    "plusplus",
+    "kern-dotty",
+    "kern-bars",
+    "logic",
+    "llgg",
+    "llggeq",
+    "html-comment"
+]               # Optional; enable specific ligation groups, overrides inherited ligation set
 
 # End ligation section
 ###################################################################################################
