@@ -12,6 +12,9 @@ inherits = "ss03"
 
 # Optional; Configure single character's variant
 [buildPlans.iosevka-mayukai-sonata.variants.design]
+a = 'double-storey-serifless'
+m = 'earless-rounded-double-arch'
+u = 'toothless-rounded'
 zero = 'reverse-slashed-oval'
 one = 'base-long-top-serif'
 asterisk = 'penta-low'
@@ -27,6 +30,7 @@ digit-form = 'lining'
 
 # Optional; Configure single character's variant for Italic only; Overrides [design]
 [buildPlans.iosevka-mayukai-sonata.variants.italic]
+a = 'single-storey-tailed'
 
 # End variant section
 ###################################################################################################
